@@ -1,0 +1,6 @@
+#+TITLE: =Dirty-S=
+-----
+
+*This repo is a =dirty= and =misc= script collections.*
+
+*Write with some /script/ _language_.*
