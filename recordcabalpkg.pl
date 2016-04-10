@@ -15,10 +15,8 @@ print FD "--------------------------------------------------\n";
 for my $lib (@libs) {
     if (-d $lib) {
 	print FD basename($lib). "\n";
-	
     }
 }
 
 print FD "--------------------------------------------------\n";
-
 close(FD) or die "Close ERROR: $!";
