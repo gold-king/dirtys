@@ -2,13 +2,13 @@
 
 print "ENV: \n";
 
-foreach my $key (sort(keys %ENV)) {
+for my $key (sort(keys %ENV)) {
     printf "%24s: %s\n",$key, $ENV{$key};
 }
 
 print "\nINC: \n";
 
-foreach my $path (@INC) {
+for my $path (@INC) {
     print "$path\n";
 }
 
