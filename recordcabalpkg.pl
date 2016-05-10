@@ -6,7 +6,7 @@ use POSIX qw /strftime/;
 
 my $cabal_path  = "/home/gk/.cabal/lib/x86_64-linux-ghc-7.10.3/";
 my $record_file = "/home/gk/cblpkg";
-my $date_time   = strftime "%F %I:%M:%S", localtime;
+my $date_time   = strftime "%F %r", localtime;
 
 my @libs = <"$cabal_path/*">;
 open(FD, '>>', $record_file)
