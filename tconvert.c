@@ -29,11 +29,11 @@ int main(int argc, char **argv)
 		exit(1);
 	} else {
 		if (strcmp(argv[1], "f") == 0) {
-			fprintf(stdout, "Your temperture convert to Celsius is: %.2f℃\n",
+			fprintf(stdout, "Your temperture convert to Celsius is: %.2f°C\n",
 				f2c(atof(argv[2])));
 			exit(0);
 		} else if (strcmp(argv[1], "c") == 0) {
-			fprintf(stdout, "Your temperture convert to Fahrenheit is: %.2f℉\n",
+			fprintf(stdout, "Your temperture convert to Fahrenheit is: %.2f°F\n",
                                 c2f(atof(argv[2])));
 			exit(0);
 		} else {
