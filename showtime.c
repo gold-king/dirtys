@@ -8,7 +8,7 @@ int main(void)
 {
 	static time_t t;
 	static struct tm *ltp;
-	static char buf[50];
+	static char buf[SIZE];
 
 	t = time(NULL);
 	ltp = localtime(&t);
