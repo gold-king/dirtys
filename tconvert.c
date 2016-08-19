@@ -17,6 +17,7 @@ void usage(void)
 	fprintf(stdout, "tconvert   -- A tool for convert Celsius and Fahrenheit eatch other.\n"
 		        "\n"
                         "USAGE: tconvert OPTION NUM\n"
+		        "\n"
 		        "  OPTION: F / C\n"
 		        "    F:   The current is Fahrenheit, convert to Celsius.\n"
 		        "    C:   The current is Celsius, convert to Fahrenheit.\n"
