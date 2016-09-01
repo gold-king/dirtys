@@ -18,7 +18,7 @@ int main(void)
 	        "Version    : %s\n"
 	        "Machine    : %s\n",
 	        uts.nodename, uts.sysname,
-	        uts.release, uts.version,
+	        uts.release,  uts.version,
 	        uts.machine);
 
 #ifdef _GUN_SOURCE
