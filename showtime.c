@@ -18,8 +18,8 @@ int main(void)
 	}
 
 	if (strftime(buf, SIZE, "%F %I:%M:%S", ltp) == 0) {
-	  fprintf(stderr, "STRFTIME function error.\n");
-	  exit(EXIT_FAILURE);
+	        fprintf(stderr, "STRFTIME function error.\n");
+	        exit(EXIT_FAILURE);
 	}
 
 	fprintf(stdout, "Current time is: %s\n", buf);
