@@ -14,6 +14,7 @@ int main(void)
 	ltp = localtime(&t);
 	if (ltp == NULL) {
 		fputs("Localtime Error!\n", stdout);
+		exit(EXIT_FAILURE);
 	}
 
 	if (strftime(buf, SIZE, "%F %I:%M:%S", ltp) == 0) {
@@ -22,5 +23,5 @@ int main(void)
 	}
 
 	fprintf(stdout, "Current time is: %s\n", buf);
-	return 0;
+	return EXIT_SUCCESS;
 }
