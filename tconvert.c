@@ -18,9 +18,9 @@ void usage(void)
 		        "\n"
                         "USAGE: tconvert OPTION NUM\n"
 		        "\n"
-		        "  OPTION: F / C\n"
-		        "    F:   The current is Fahrenheit, convert to Celsius.\n"
-		        "    C:   The current is Celsius, convert to Fahrenheit.\n"
+		        "  OPTION:\n"
+		        "    F/f:   The current is Fahrenheit, convert to Celsius.\n"
+		        "    C/c:   The current is Celsius, convert to Fahrenheit.\n"
 		        "  NUM:    The number of temperture.\n");
 }
 
@@ -30,18 +30,18 @@ int main(int argc, char **argv)
 		usage();
 		exit(1);
 	} else {
-		if (strcmp(argv[1], "f") == 0) {
+		if ((strcmp(argv[1], "f") == 0) || (strcmp(argv[1], "F") == 0)) {
 			fprintf(stdout, "Your temperture convert to Celsius is: %.2f°C\n",
 				f2c(atof(argv[2])));
-			exit(0);
-		} else if (strcmp(argv[1], "c") == 0) {
+			exit(EXIT_SUCCESS);
+		} else if ((strcmp(argv[1], "c") == 0) || (strcmp(argv[1], "C") == 0)) {
 			fprintf(stdout, "Your temperture convert to Fahrenheit is: %.2f°F\n",
                                 c2f(atof(argv[2])));
-			exit(0);
+			exit(EXIT_SUCCESS);
 		} else {
 			fputs("Unknow arguments.\n", stdout);
 			usage();
-			exit(1);
+			exit(EXIT_FAILURE);
 		}
 	}
 
