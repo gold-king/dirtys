@@ -7,5 +7,5 @@ int main(void)
 		fprintf(stdout, "%s\n", *env);
 	}
 
-	return 0;
+	return EXIT_SUCCESS;
 }
