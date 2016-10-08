@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 extern char **environ;
 
 int main(void)
@@ -7,5 +8,5 @@ int main(void)
 		fprintf(stdout, "%s\n", *env);
 	}
 
-	return EXIT_SUCCESS;
+	return 0;
 }
