@@ -2,15 +2,25 @@
 #include <stdio.h>
 #include <time.h>
 
-int main(void) 
+int main(int argc, char **argv)
 {
         int num;
         srand((unsigned)time(NULL));
- 
-        for (int i = 0; i < 10; i++) {
-                num = rand();
-	        fprintf(stdout, "Random Number: %d\n", num);
-        }
+
+	int length = 100;
+
+	if (argc == 2) {
+		length = atoi(argv[1]);
+	}
+
+        for (int i = 1; i <= length; ++i) {
+                num = rand() % 10;
+	        fprintf(stdout, "%2d", num);		
+
+		if (i % 10 == 0) {
+			fprintf(stdout, "\n");
+		}
+	}
          
         return EXIT_SUCCESS;
 }
