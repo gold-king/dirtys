@@ -1,6 +1,6 @@
 #+TITLE: =Dirty-S=
 
-[[https://travis-ci.org/gold-king/dirtys][[https://travis-ci.org/gold-king/diryts.svg?branch=master]]]
+[[https://travis-ci.org/gold-king/dirtys]]  [[https:/travis-ci.org/gold-king/dirtys.svg?branch=master]]
 -----
 
 *This repo is a* =dirty= *and* =misc= *script collections.*
